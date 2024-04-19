@@ -1,12 +1,14 @@
 import SectionPrincipal from "./content/sectionPrincipal";
 import Footer from "./footer/footer";
 import MenuNav from "./nav/menuNav";
+import SectionRestaurantExample from "./restaurants/sectionRestaurantExample";
 
 function Home(){
     return(
         <>
         <MenuNav/>
-        <SectionPrincipal/>
+        <SectionPrincipal to={"/"}/>
+        <SectionRestaurantExample/>
         <Footer/>
         </>
     )
