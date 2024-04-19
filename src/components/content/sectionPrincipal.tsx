@@ -10,7 +10,7 @@ export default function SectionPrincipal({to}){
                         <Link to={to} className="btn-principal">Empieza ahora aqui</Link>
                     </div>
                 </div>
-                <img className="principal-img" src="https://elementdesign.com.co/wp-content/uploads/2021/08/persona-menu-digital-1.png"/>
+                <img className="principal-img" src="https://elementdesign.com.co/wp-content/uploads/2021/08/persona-menu-digital-1.png" alt="imagen de qr con restaurante"/>
             </div>
         </div>
 
