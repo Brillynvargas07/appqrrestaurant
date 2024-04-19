@@ -208,3 +208,42 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* SECTION PRINCIPAL ==================== */
+.section-princial{
+  width: 100%;
+  padding: 3rem 10rem;
+  background: var(--color-background);
+  justify-content: flex-end;
+  align-items: center;
+  display: inline-flex;
+}
+
+.principal-conteinter{
+  align-self: stretch;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  display: inline-flex;
+}
+
+.principal-info{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2.8rem;
+  display: inline-flex;
+}
+
+.principal-title{
+  width: 640px;
+  color: white;
+  font-size: 8rem;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.principal-img{
+  width: 80rem;
+  height: 70rem;
+
+  padding: 8rem;
+}
