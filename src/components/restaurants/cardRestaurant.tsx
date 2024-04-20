@@ -14,16 +14,3 @@ export default function CardRestaurant({title, imgUrl}) {
     </>
   );
 }
-
-/*
-
-<div className="restauranst-content-card">
-      <div className="restauranst-mask-img">
-        <img
-          className="restauranst-img"
-          src={imgUrl}
-        />
-      </div>
-      <div className="restaurant-content-title">{title}</div>
-    </div>
-*/
