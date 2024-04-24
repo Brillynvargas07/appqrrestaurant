@@ -12,11 +12,11 @@ export default function MenuNav(){
             </div>
             <div className="section-container-navitem">
                 <NavItem to={"/"} name={"Inicio"}/>
-                <NavItem to={"/"} name={"Restaurantes"}/>
+                <NavItem to={"/restaurants"} name={"Restaurantes"}/>
             </div>
             <div className="section-container-btn">
-                <ButtonPrincipal to={"/"}/>
-                <ButtonSecundary to={"/"}/>
+                <ButtonPrincipal to={"/login"}/>
+                <ButtonSecundary to={"/sign-in"}/>
             </div>
         </header>
     )

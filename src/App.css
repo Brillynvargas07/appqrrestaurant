@@ -15,6 +15,8 @@
   --color-title: #252630;
   --color-text: #74768F;
   --color-borde: #023E8A;
+
+  --color-bg-secundario: #CAF0F8;
 }
 
 html{
@@ -582,4 +584,133 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 50%;
 
 
+}
+
+/* Login ============================== */
+.login{
+  height: calc(100vh - 8rem);
+  width: 100%;
+  background-color: var(--color-background);
+  padding: 20rem 10rem;
+}
+
+.login__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.login__header{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.login__title{
+  font-size: 6.4rem;
+  line-height: 1.2;
+  color: var(--color-neutral);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login__content{
+  padding: 10rem 7rem;
+  background-color: var(--color-bg-secundario);
+  border-radius: 3rem;
+}
+
+.login__form-title{
+  margin-bottom: 3.6rem;
+  font-size: 2.4rem;
+  color: var(--color-principal);
+}
+
+.login__form-container{
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.login__form-input{
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-text);
+  transition: all 70ms ease-in-out;
+}
+
+.login__form-input:focus{
+  border-bottom: 2px solid var(--color-borde);
+}
+
+.login__form-btn{
+  position: relative;
+  display: block;
+  height: 4.3rem;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-principal);
+  color: var(--color-bg-secundario);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+}
+
+.login__form-btn::after {
+	content: "";
+	width: calc(100% + 4.3rem);
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: calc(-100% - 4.3rem);
+	border-bottom: 4.3rem solid var(--color-secundary);
+	border-right: 4.3rem solid transparent;
+	transition: .4s ease-in-out all;
+}
+
+.login__form-btn:hover::after {
+  left: 0;
+  z-index: 1;
+}
+
+.login__form-btn--txt{
+  position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+.login__link{
+  position: relative;
+  color: var(--color-principal);
+  font-weight: 600;
+}
+
+.login__link::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: all 70ms ease-in-out;
+  border-bottom:  0px solid var(--color-borde);
+}
+
+.login__link:hover::after{
+  border-bottom:  2px solid var(--color-borde);
+}
+
+.login__link:hover{
+  color: #000;
+}
+
+.login__form-container--btn-gap{
+  gap: 0.3rem
 }
