@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function SectionPrincipal({to}){
+export default function SectionPrincipal({to}: {to: string}){
     return(
         <div className="section-princial">
             <div className="principal-conteinter">

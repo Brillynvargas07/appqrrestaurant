@@ -1,6 +1,11 @@
 import SectionServiceItem from "./sectionServiceItem";
 
-export default function SectionService({title, cssPersonalice, titles}){
+interface Props{
+    title: string;
+    cssPersonalice: string;
+    titles: string[];
+}
+export default function SectionService({title, cssPersonalice, titles}: Props){
     const array:string[] = titles
 
     return(
@@ -9,8 +14,8 @@ export default function SectionService({title, cssPersonalice, titles}){
 
         <ul className="widget__list">
             {
-                array.map((title, index) => (
-                    <SectionServiceItem key={index} name={title}/>
+                array.map((tl, index) => (
+                    <SectionServiceItem key={index} name={tl}/>
                 ))
             }
         </ul>
