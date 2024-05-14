@@ -4,6 +4,11 @@ import Text from "../input/text";
 import HeaderBasic from "../basics/headerBasic";
 
 export default function Login(){
+    const onClick = () => {
+        localStorage.setItem("login", true);
+        window.location.reload();
+    }
+
     return(
         <section className="login">
             <div className="login__container">
@@ -15,11 +20,13 @@ export default function Login(){
                             <Text text="correo" type="email"/>
                             <Text text="contraseña" type="password" />
                         </div>
-                        <ButtonACss 
+                        <ButtonACss
+                        onClick={onClick} 
                         text="¿No tienes cuenta? para registrarte da click"
                         textLink="Aqui"
                         textButton="Iniciar sesion"
-                        to="/sign-in"/>
+                        to="/sign-in"
+                        toButton="/dashboard"/>
                     </form>
                 </div>
             </div>

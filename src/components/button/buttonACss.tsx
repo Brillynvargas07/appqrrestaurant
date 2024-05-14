@@ -5,11 +5,13 @@ interface Props{
     textLink: string;
     text: string;
     to: string;
+    toButton: string;
+    onClick: Function;
 }
-export default function ButtonACss({textButton, textLink, text, to}: Props){
+export default function ButtonACss({textButton, textLink, text, to, toButton, onClick}: Props){
     return(
         <div className="login__form-container login__form-container--btn-gap">
-            <button className="login__form-btn" type="submit"><span className="login__form-btn--txt">{textButton}</span></button>
+            <Link to={toButton} onClick={onClick} className="login__form-btn" type="submit"><span className="login__form-btn--txt">{textButton}</span></Link>
             <p className="login__form-text">{text} <Link to={to} className="login__link">{textLink}</Link></p>
         </div>
     )
