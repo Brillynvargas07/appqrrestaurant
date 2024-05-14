@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 import { Link } from "react-router-dom";
 
 interface Props{
@@ -6,7 +7,7 @@ interface Props{
     text: string;
     to: string;
     toButton: string;
-    onClick: Function;
+    onClick: MouseEventHandler<HTMLAnchorElement>;
 }
 export default function ButtonACss({textButton, textLink, text, to, toButton, onClick}: Props){
     return(

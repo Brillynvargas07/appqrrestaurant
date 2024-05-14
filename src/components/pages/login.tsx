@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
 import ButtonACss from "../button/buttonACss";
 import Text from "../input/text";
 import HeaderBasic from "../basics/headerBasic";
 
 export default function Login(){
     const onClick = () => {
-        localStorage.setItem("login", true);
-        window.location.reload();
+        localStorage.setItem("login", "true");
     }
 
     return(

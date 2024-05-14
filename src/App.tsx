@@ -11,23 +11,10 @@ import SignIn from "./components/pages/signIn";
 import Dashboard from "./components/pages/dashboard";
 import MenuSide from "./components/nav/menuSide";
 import Product from "./components/pages/product";
-import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
 import Refresh from "./components/pages/refresh";
 
-
-/* 
-const dispatch = useDispatch();
-	useEffect(() => {
-		const sessionData = localStorage.getItem('session');
-		if (sessionData) {
-			dispatch(loginSucces(JSON.parse(sessionData)));
-		}
-	});
-
-  */
 function App() {
-  const [isLogin, setIsLogin] = useState(Boolean(localStorage.getItem('login')));
+  const isLogin = Boolean(localStorage.getItem('login'));
 
   if(!isLogin){
     return (

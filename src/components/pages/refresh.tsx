@@ -1,4 +1,4 @@
-export default function Refresh({of}: {of:string}){
+export default function Refresh(){
     window.location.reload();
     return(<></>)
 }

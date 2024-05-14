@@ -1,14 +1,13 @@
 import { useState } from "react";
 import "../../assets/img/profile.jpg";
 import { Link, useLocation } from "react-router-dom";
-import Sidemenu from "react-native";
 
 export default function MenuSide() {
+  const [openMenuDropdown, setOpenMenuDropdown] = useState(false);
   const location = useLocation();
   const [menuSelect, setMenuSelect] =
     location.pathname === "/products" ? useState("menu") : useState("mesas");
   
-  const [openMenuDropdown, setOpenMenuDropdown] = useState(false);
 
   const clickMenu = () => {
     setMenuSelect("menu");

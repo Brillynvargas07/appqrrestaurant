@@ -1,5 +1,5 @@
 interface Props{
-    text1: string;
+    text: string;
     text2: string;
 }
 

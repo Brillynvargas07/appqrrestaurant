@@ -19,7 +19,9 @@ export default function SignIn(){
                         text="¿Ya tienes una cuenta? para iniciar sesion da click"
                         textLink="Aqui"
                         textButton="Registrarte"
-                        to="/login"/>
+                        to="/login"
+                        toButton="/login"
+                        onClick={() => console.log("👍")}/>
                     </form>
                 </div>
             </div>

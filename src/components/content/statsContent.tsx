@@ -1,49 +1,45 @@
 export default function StatsContent(){
     return(
-        <aside class="right-section">
-          <div class="separator" id="first">
+        <aside className="right-section">
+          <div className="separator" id="first">
             <h4>Estadisticas</h4>
           </div>
 
-          <div class="stats">
-            <div class="item">
-              <div class="top">
+          <div className="stats">
+            <div className="item">
+              <div className="top">
                 <p>Clientes </p>
                 <p>el dia de hoy</p>
               </div>
-              <div class="bottom">
-                <div class="line"></div>
+              <div className="bottom">
+                <div className="line"></div>
                 <h3>105</h3>
               </div>
             </div>
             
-            <div class="item">
-              <div class="top">
+            <div className="item">
+              <div className="top">
                 <p>Gancias</p>
                 <p>el dia de hoy</p>
               </div>
-              <div class="bottom">
-                <div class="line"></div>
+              <div className="bottom">
+                <div className="line"></div>
                 <h3>$5.680.500</h3>
               </div>
             </div>
           </div>
 
-          <div class="separator">
+          <div className="separator">
             <h4>Mesas ocupadas</h4>
           </div>
 
-          <div class="weekly">
-            <div class="title">
-              <div class="line"></div>
+          <div className="weekly">
+            <div className="title">
+              <div className="line"></div>
               <h5>ocupadas / total</h5>
             </div>
             <div
-              class="progress-bar"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
+              className="progress-bar"
             ></div>
           </div>
         </aside>

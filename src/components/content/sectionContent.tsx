@@ -4,8 +4,8 @@ export default function SectionContent() {
   return (
     <main>
       <header>
-        <div class="separator">
-          <div class="info">
+        <div className="separator">
+          <div className="info">
             <h3>Gestion de mesas</h3>
             <a href="#">Estado actual de mesas</a>
           </div>

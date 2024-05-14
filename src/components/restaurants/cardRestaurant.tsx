@@ -1,4 +1,4 @@
-export default function CardRestaurant({title, imgUrl}) {
+export default function CardRestaurant({title, imgUrl}: {title: string; imgUrl: string}) {
   return (
     <>
     <a className="contianer-card__card">
